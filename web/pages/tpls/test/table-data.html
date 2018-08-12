@@ -1,0 +1,17 @@
+<h2>ice-Creams</h2>
+<button class="btn btn-primary" ng-click="testPost()">点我测试发送请求呀</button>
+<table class="table table-hover table-striped table-bordered">
+    <thead>
+    <tr>
+        <td>Name</td>
+        <td>Cost</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="topic in topics">
+        <td>{{ topic.name }}</td>
+        <td>${{ topic.price }}</td>
+    </tr>
+    </tbody>
+</table>
+

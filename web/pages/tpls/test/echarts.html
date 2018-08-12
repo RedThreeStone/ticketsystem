@@ -1,0 +1,26 @@
+<div ng-controller="echartController">
+    <button class="btn-danger" ng-click="testMapper()">测试mapper</button>
+   <!-- <input type="file" nv-file-select uploader="uploader" filters="fileNumber" name="file">
+    <ul>
+        <<li ng-repeat="item in uploader.queue">
+            Name: <span ng-bind="item.file.name" ></span><br/>
+        </li>
+    </ul>-->
+    <table class="table table-bordered">
+        <tr>
+            <td colspan="1">区域</td>
+            <td colspan="1">任务名称</td>
+            <td colspan="1">值</td>
+        </tr>
+        <tr  ng-repeat="data in testJson">
+            <td colspan="1" ng-show="data.is_total==''">{{data.quyu}}</td>
+            <td colspan="2" ng-show="data.is_total=='yes'">{{data.total_value}}</td>
+            <td colspan="1">{{data.task_name}}</td>
+            <td colspan="1">{{data.value}}</td>
+        </tr>
+    </table>
+  <!--  <button class="btn-default" ng-click="uploader.uploadAll()">上传</button>
+    <canvas id="echarts1"></canvas>
+    <div id="echarts2" style="width: 800px;height: 400px"></div>
+    <div id="echarts3" style="width: 800px;height: 400px"></div>-->
+</div>
