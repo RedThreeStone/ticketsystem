@@ -42,7 +42,7 @@ public class MulitFormatDateEditor extends PropertyEditorSupport {
             setValue(null);
         }
         else if(text != null && this.exactDateLength >= 0 && text.length() != this.exactDateLength){
-            throw new IllegalArgumentException("不能解析这个日期，长度为："+this.exactDateLength);
+            throw new IllegalArgumentException("不能解析这个日期2，长度为："+this.exactDateLength);
         }
         else{
             try {
